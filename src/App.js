@@ -40,7 +40,9 @@ export default function App() {
 
   useEffect(() => {
     const tempTasks = JSON.parse(localStorage.getItem('tasks'))
-    if(tempTasks) setTasks(tempTasks)
+    if(tempTasks) {
+      setTasks(tempTasks)
+    }
   }, [])
 
   return (
